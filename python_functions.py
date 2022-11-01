@@ -1,3 +1,6 @@
+from re import X
+
+
 def sum_to(n):
   x = 0
   total = 0
@@ -26,3 +29,13 @@ occurrences('fleep floop', 'e')   # returns 2
 occurrences('fleep floop', 'p')   # returns 2
 occurrences('fleep floop', 'ee')  # returns 1
 occurrences('fleep floop', 'fe')  # returns 0
+
+def product(*args):
+  x = 1
+  for arg in args:
+    x *= arg
+  print(x)
+
+product(-1, 4) # returns -4
+product(2, 5, 5) # returns 50
+product(4, 0.5, 5) # returns 10.0
